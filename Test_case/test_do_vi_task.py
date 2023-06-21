@@ -26,7 +26,7 @@ class do_vi_task(unittest.TestCase,Loctor):
     # 要读取data路径下的login.xlsx文件
     path = os.path.join(dir_path, "data", "vi_task.xlsx")
 
-    @unittest.skip('1')
+    unittest.skip('1')
     @data(*GetData().getExcel(path, '带软件'))
     @unpack
     @BeautifulReport.add_test_img('test_01_add_software_vi_task')
